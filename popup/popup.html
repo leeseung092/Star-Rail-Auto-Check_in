@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      width:  320px; 
+      height: 190px;
+      background-image: url("https://webstatic.hoyoverse.com/upload/event/2022/03/30/f248d4794fc8ea9edded735508350e63_1700321507566507959.png");
+      background-size: 369px 190px;
+      background-repeat: no-repeat;
+    }
+    #checkInDate, #checkInStatus {
+      font-family: "KBIZ한마음 고딕체", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: lighter;
+      color: #333;
+      text-align: center;
+      margin: 0;
+    }
+    #container2 {
+      text-align: center;
+      position: fixed;
+      bottom: 5%;
+      left: 40%;
+      transform: translateX(-40%);
+    }
+    #container {
+      text-align: center;
+      position: fixed;
+      bottom: 11%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #container2 {
+
+    width: 360px;
+    height: 20px;
+    margin: auto;
+    background-color: #BDBDBD;
+  }
+    #toggleCheckInButton
+    {
+      padding: 12px 0;
+      width: 160px;
+      height: 45px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.05em;
+      background: linear-gradient(to right, #4ca2cd, #67b26f);
+      color: #fff;
+      cursor: pointer;
+      text-shadow: 0 0 5px;
+      margin-bottom: 20px;
+    }
+  </style>
+  <title>붕괴 스타레일 자동출석</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+  </style>
+</head>
+<body>
+    <div id="container">
+      <button id="toggleCheckInButton">자동출석 활성화</button>
+    </div>
+    <div id="container2">
+      <p id="checkInDate"></p>
+      <p id="checkInStatus"></p>
+    </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
